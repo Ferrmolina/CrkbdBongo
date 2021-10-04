@@ -2,7 +2,7 @@
 
 #pragma once
 
-#define OLED_FONT_H "keyboards/crkbd/keymaps/bon/glcdfont.c"
+#define OLED_FONT_H "keyboards/crkbd/keymaps/CrkbdBongo/glcdfont.c"
 
 #define MASTER_LEFT
 
