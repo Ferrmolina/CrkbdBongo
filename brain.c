@@ -46,16 +46,17 @@ void render_status_main(void) {
 
 // Slave Oled
 void render_status_secondary(void) {
-    render_anim();
+   // render_anim();
 }
 
 // Oled Sleeps
-void oled_task_user(void) {
+bool oled_task_user(void) {
   if (is_keyboard_master()) {
       render_status_main();
   } else {
       render_status_secondary();
   }
+   return true;
 }
 #endif
 
